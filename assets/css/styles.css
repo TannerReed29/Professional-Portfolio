@@ -71,18 +71,6 @@ header nav ul li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   /* Hero Style Start */
 .hero {
     background-image: url('../images/herobackground.jpg');
@@ -132,6 +120,8 @@ header nav ul li a:hover {
     text-align: left;
 }
 /* End Intro/About me */
+
+/* start main content WORK section */
 .main {
     height: fit-content;
     margin: auto;
@@ -262,6 +252,9 @@ header nav ul li a:hover {
     padding-left: 10px;
     padding-bottom: 10px;
 }
+/* End main content WORK section */
+
+/* Start Contact Section */
 .contact {
     height: fit-content;
     margin: auto;
@@ -280,7 +273,7 @@ header nav ul li a:hover {
     color: var(--blue-color);
     border-bottom: 8px solid var(--blue-color);
 }
-
+/* End Contact Section */
 
 .flex-row {
     display: flex;
