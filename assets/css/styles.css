@@ -128,7 +128,7 @@ header nav ul li a:hover {
     line-height: 1.7;
     color: var(--blue-color);
     width: 60%;
-    font-size: 2.4vh;
+    font-size: 24px;
     text-align: left;
 }
 /* End Intro/About me */
@@ -158,22 +158,21 @@ header nav ul li a:hover {
     width: 55vw;
     
 }
-/*.content-top:hover::after {
-    content: "\A";
-    width: 100%;
+.content-img:hover::backdrop {
+    background-color: var(--highlight);
     height: 100%;
-    background: var(--highlight);
-    position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
-}*/
+    position: absolute;
+    display: block;
+ 
+}
 .content-top h3 {
     background-color: var(--turq-color);
     color: var(--gray-color);
     width: 20%;
-    /*margin-top: 40vh;*/
     text-align: left;
-    /*justify-content: flex-start;*/
     padding-left: 10px;
     padding-bottom: 10px;
     /*bottom: 0;*/
@@ -188,18 +187,14 @@ header nav ul li a:hover {
 
 .lower-content {
     display: flex;
-    /*align-items: flex-start;*/
     flex-wrap: wrap;
     flex-flow: column wrap;
-    /*height: 100px;*/
     margin-top: 8px;
-    /*vertical-align: middle;*/
     padding: 0 10px;
     height: 250px;
-    /*height: fit-content;*/
 }
-.lower-content-img {
-    background-image: url('../images/surf.jpg');
+.lower-content-imga {
+    background-image: url('../images/Horiseon-Preview.png');
     background-size: cover;
     background-position: 100%;
     background-attachment: local;
@@ -211,7 +206,51 @@ header nav ul li a:hover {
     height: 32vh;
     width: 29vw;
     position: relative;
-    /*margin: 15px;*/
+    flex: 20%;
+}
+.lower-content-imgb {
+    background-image: url('../images/LED-Wall.png');
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: local;
+    border: 4px solid var(--turq-color);
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    height: 32vh;
+    width: 29vw;
+    position: relative;
+    flex: 20%;
+}
+.lower-content-imgc {
+    background-image: url('../images/calculator.jpg');
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: local;
+    border: 4px solid var(--turq-color);
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    height: 32vh;
+    width: 29vw;
+    position: relative;
+    flex: 20%;
+}
+.lower-content-imgd {
+    background-image: url('../images/Portfolio-Preview.png');
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: local;
+    border: 4px solid var(--turq-color);
+    display: block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    height: 32vh;
+    width: 29vw;
+    position: relative;
     flex: 20%;
 }
 .lower-content h3 {
@@ -220,7 +259,6 @@ header nav ul li a:hover {
     width: 14vw;
     text-align: left;
     font-size: 1.33vw;
-    /*justify-content: flex-start;*/
     padding-left: 10px;
     padding-bottom: 10px;
 }
@@ -262,3 +300,85 @@ header nav ul li a:hover {
     align-items: flex-end;
     align-content: space-around;
 }
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2 {
+        text-align: center;
+        width: 100%;
+      }
+      .section-title {
+        width: 80%;
+        flex: 1 60%;
+        margin-right: 100%;
+      }
+      
+      .contact-info h4 {
+        font-size: 14px;
+    }
+      .flex-row {
+          margin-left: 10px;
+      }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+      .content-img {
+        flex: 0 16%;
+        width: 60vw;
+        height: 26vh;
+      }
+      .lower-content-img {
+          flex: 0 50%;
+      }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+      .section-title {
+        margin-right: 80%;
+      }
+      .content-top {
+          margin-left: 20%;
+      }
+      .intro p {
+        line-height: 1.2;
+        width: 60%;
+        font-size: 12px;
+        text-align: left;
+        margin-left: 20%;
+    }
+    .content-title  {
+        width: 20vw;
+        font-size: 16px;
+
+    }
+      .contact-info {
+        text-align: right;
+      }
+    
+      .contact-info > * {
+        flex: 0 100%;
+      }
+    }
