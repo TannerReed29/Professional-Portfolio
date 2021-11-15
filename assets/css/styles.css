@@ -128,7 +128,6 @@ header nav ul li a:hover {
 }
 
 .content-top {
-    /*width: 55%;*/
     margin: auto;
 }
 .content-img {
@@ -148,16 +147,6 @@ header nav ul li a:hover {
     width: 55vw;
     
 }
-.content-img:hover::backdrop {
-    background-color: var(--highlight);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    display: block;
- 
-}
 .content-top h3 {
     background-color: var(--turq-color);
     color: var(--gray-color);
@@ -165,8 +154,6 @@ header nav ul li a:hover {
     text-align: left;
     padding-left: 10px;
     padding-bottom: 10px;
-    /*bottom: 0;*/
-    /*left: 0;*/
 }
 .content-title {
     font-size: 1.75vw;
@@ -293,7 +280,9 @@ header nav ul li a:hover {
     align-items: flex-end;
     align-content: space-around;
 }
-
+footer h2 {
+    text-align: center;
+  }
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
