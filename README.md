@@ -6,4 +6,4 @@
 
 
 ## Screenshots
-![Website Preview](./assets/images/Horiseon-Preview.png)
+![Website Preview](./assets/images/Portfolio-Preview.png)
